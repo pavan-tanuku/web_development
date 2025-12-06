@@ -1,0 +1,25 @@
+/* margin top and bottom ideally collapse each others, and the most big number take the space first compared to the smaller one */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.red {
+    height: 100px;
+    background-color: rgb(214, 36, 36);
+    /* margin: 100px; */
+    margin-bottom: 25px;
+}
+
+.blue {
+    height: 100px;
+    background-color: rgb(20, 20, 109);
+    /* margin: 100px; */
+    margin-top: 20px;
+}
+
+.green {
+    height: 100px;
+    background-color: rgb(0, 128, 0);
+    /* margin: 100px; */
+}
