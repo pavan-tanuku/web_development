@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input practice 2</title>
+</head>
+<body>
+    <h1>Input types:</h1>
+    <p>This this page gives idea about input types</p>
+    <ol>
+        <li>
+            <label for="text">Name:
+                <input type="text" id="text" name="name" placeholder="enter name" required>
+            </label>
+        </li>
+
+        <li>
+            <label for="password">Password:
+                <input type="password" name="password" id="password" placeholder="enter password" required>
+            </label>
+        </li>
+
+        <li>
+            <label for="email">Email:
+                <input type="email" name="email" id="email" placeholder="enter email" required>
+            </label>
+        </li>
+
+        <li>
+            <label for="age">Age:
+                <input type="number" name="age" id="age" min="0" max="100" step="1" required>
+            </label>
+        </li>
+
+        <li>
+            <label for="rating">Feedback:
+                <input type="range" name="feedback" id="rating" min="1" max="10" required>
+            </label>
+        </li>
+
+        <li>
+            <label for="goal">Goal:
+                <input type="radio" name="goal" id="goal"> Full-Stack
+                <input type="radio" name="goal" id="goal"> AI Engineer
+                <input type="radio" name="goal" id="goal"> Cybersecurity
+            </label>
+        </li>
+
+        <li>
+            <label for="habits">Habits:
+                <input type="checkbox" name="habits" id="habits"> Reading Books
+                <input type="checkbox" name="habits" id="habits"> Coding
+                <input type="checkbox" name="habits" id="habits"> Enjoying self-company
+                <input type="checkbox" name="habits" id="habits"> Playing games
+            </label>
+        </li>
+
+        <li>
+            <label for="big-text">About:
+                <textarea name="about" id="big-text" cols="50" rows="6" placeholder="Tell about your self...">Tell about your self...</textarea>
+            </label>
+        </li>
+
+        <li>
+            <label for="options">Country:
+                <select name="country" id="options">
+                    <option value="select">Select</option>
+                    <option value="india">India</option>
+                    <option value="russia">Russia</option>
+                    <option value="south-africa">South Africa</option>
+                    <option value="brazil">Brazil</option>
+                </select>
+            </label>
+        </li>
+
+        <li>
+            <label for="search">Search:
+                <input type="search" name="query" id="search">
+            </label>
+        </li>
+
+        <li>
+            <label for="btn">Button:
+                <input type="button" name="sign-in" id="btn" value="SignIn">
+            </label>
+        </li>
+
+        <li>
+            <label for="clr">Reset:
+                <input type="reset" name="clear" id="clr">
+            </label>
+        </li>
+
+        <li>
+            <label for="color">Color:
+                <input type="color" name="color" id="color">
+            </label>
+        </li>
+
+        <li>
+            <label for="dob">Date of Birth:
+                <input type="date" name="date of birth" id="dob">
+            </label>
+        </li>
+    </ol>
+</body>
+</html>
