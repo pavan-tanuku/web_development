@@ -5,7 +5,7 @@
 
 body {
     font-family: "Happy Monkey", system-ui;
-    background-image: url("/projects/images/window-bg.jpg");
+    background-image: url("/projects/project1/images/window-bg.jpg");
     background-size: cover;
     display: block;
     width: 400px;
