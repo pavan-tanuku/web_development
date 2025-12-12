@@ -6,3 +6,8 @@ function countPeople() {
     console.log(count);
     
 }
+
+function resetCount() {
+    count = 0;
+    countDisplay.innerText = count;
+}
