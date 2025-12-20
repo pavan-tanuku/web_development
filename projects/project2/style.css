@@ -1,0 +1,82 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* background-image: url("/projects/project2/images/nick-hillier-yD5rv8_WzxA-unsplash.jpg"); */
+    background-color: #c0c0c0;
+    background-size: cover;
+    background-position: center;
+    /* background: linear-gradient(#4F4B42, #121212); */
+}
+
+.container {
+    border: 3px solid #4F4B42;
+    box-shadow: 0px 0px 10px #A58D76;
+    border-radius: 30px;
+    width: 500px;
+    margin: 55px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2c2b27;
+}
+
+#title {
+    font-family: "VT323", monospace;
+    font-size: 50px;
+    color: #D0C9B4;
+    margin: 20px 0px;
+    text-shadow: 0px 0px 1px #4F4B42;
+}
+
+#input-btn {
+    width: 90%;
+    height: 60px;
+    font-family: "Orbitron", sans-serif;
+    font-size: 30px;
+    color: #D0C9B4;
+    background-color: #121212;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #4F4B42;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 6px;
+}
+
+.hero {
+    margin: 10px 20px 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.btn {
+    font-family: "Orbitron", sans-serif;
+    font-size: large;
+    margin: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #D0C9B4;
+    background-color: #4F4B42;
+    box-shadow: 0px 0px 5px #4F4B42;
+}
+
+#equal-btn, #history, #clear-btn {
+    color: orangered;
+    background-color: #121212;
+}
+#equal-btn:hover, #history:hover, #clear-btn:hover {
+    box-shadow: 0px 0px 10px orangered;
+}
