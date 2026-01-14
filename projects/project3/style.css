@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Alfa Slab One", serif;
+    letter-spacing: 2px;
+    color: #F4D06F;
+    background: #1B1A1A;
+    text-align: center;
+}
+
+.main {
+    margin-top: 30px;
+}
+
+#main-title {
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    letter-spacing: 6px;
+}
+
+#teams {
+    padding: 30px;
+    display: flex;
+    width: 700px;
+    height: 400px;
+    justify-content: space-around;
+    margin: 30px auto;
+    box-shadow: #66666e 0px 0px 12px;
+    border-radius: 10px;
+}
+
+.card {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    padding: 10px;
+}
+
+.team-title {
+    margin-bottom: 50px;
+    letter-spacing: 8px;
+    font-size: 30px;
+}
+
+.dsp {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    border: none;
+}
+
+.points {
+    /* border: 1px solid rgb(255, 234, 0); */
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    color: #403d39;
+    background-color: #fffcf2;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+}
+button:hover {
+    background-color: #ccc5b9;
+    color: #252422;
+    cursor: pointer;
+    box-shadow: #fffcf2 0px 0px 10px;
+}
+
+#new-game {
+    width: 150px;
+    margin: 0 25px;
+}
+
+#new-game-btn {
+    width: 150px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    margin-top: 16px;
+    background-color: #f8cb4eef;
+    color: #30343f;
+}
+
+#new-game-btn:hover {
+    background-color: #fdcf4fe0;
+    color: #1b1a1a;
+    cursor: pointer;
+    box-shadow: #F4D06F 0px 0px 10px;
+    height: 45px;
+    width: 160px;
+}
