@@ -20,32 +20,34 @@
         <div id="main-title">
             <h1>The Basketball Score Board</h1>
         </div>
+        <div id="winner"></div>
         <div id="teams">
             <div class="card">
                 <h2 class="team-title">HOME</h2>
-                <input class="dsp" type="text" value="0">
+                <input class="dsp" type="text" value="0" readonly>
                 <div class="points">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button>
+                    <button class="btn" onclick="score(this)">1</button>
+                    <button class="btn" onclick="score(this)">2</button>
+                    <button class="btn" onclick="score(this)">3</button>
                 </div>
             </div>
 
             <div id="new-game" class="card">
-                <button id="new-game-btn">New Game</button>
+                <button id="new-game-btn" onclick="newGame()">New Game</button>
             </div>
 
             <div class="card">
                 <h2 class="team-title">GUEST</h2>
-                <input class="dsp" type="text" value="0">
+                <input class="dsp" type="text" value="0" readonly>
                 <div class="points">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button>
+                    <button class="btn" onclick="score(this)">1</button>
+                    <button class="btn" onclick="score(this)">2</button>
+                    <button class="btn" onclick="score(this)">3</button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>

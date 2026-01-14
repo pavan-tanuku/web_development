@@ -23,6 +23,10 @@ body {
     letter-spacing: 6px;
 }
 
+#winner {
+    color: #ffffff;
+}
+
 #teams {
     padding: 30px;
     display: flex;
