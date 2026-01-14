@@ -1,108 +1,81 @@
-# Basketball Scoreboard Game
+# The Basketball Game Points Table (Scoreboard App)
+
+A beginner-friendly JavaScript project that simulates a simple game points table.
+Each team can score points using predefined buttons, and the first team to reach
+or cross the maximum score wins the game.
+
+This project focuses on understanding **DOM traversal, event handling, and game state management**.
+
+---
 
 ## Project Overview
-This project is a simple basketball scoreboard game built for practice.
-It tracks score for two teams: **HOME** and **GUEST**
 
-The goal of this project is to practice JavaScript fundaments such as:
-- State management
-- Button-driven logic
-- Conditional checks
-- Resetting application state
+- Two teams compete by scoring points
+- Each team has buttons to add `+1`, `+2`, or `+3` points
+- Scores update instantly on button clicks
+- The game stops automatically when a team wins
+- A **New Game** button resets the game
 
 ---
 
 ## Game Rules
 
 - Both teams start with a score of `0`
-- Each team can score points using `+1`, `+2`, or `+3` buttons
-- Scores update immediately on buttons click
-- The game continues until one of the following occurs:
-    - The **New Game** button is clicked
-    - Any team reaches the **maximum score limit first**
-- Once a team reached the maximum score:
-    - No further points can be added
-    - A new game must be started to continue
+- Teams can score points using `+1`, `+2`, or `+3` buttons
+- The game continues until one team reaches **21 or more**
+- The first team to reach or cross `21` is declared the winner
+- Once the game is over, score buttons stop working
+- Clicking **New Game** resets:
+  - both team scores
+  - winner message
+  - game state
 
 ---
 
-## Game Constraints
+## Constraints Applied
 
-### Constraint 1: No Negative Scores
-- Scores must always start from`0`
-- Scores can increase
-- No decrement or minus operations are allowed
-
-**Why this constraint exists:**
-This ensures the score always stays valid and helps practice controlled state updates.
+- Scores are updated **only through JavaScript**
+- Manual typing in score fields is disabled using `readonly`
+- DOM elements are selected **relative to the clicked button**
+- Game state is controlled using a boolean flag (`isGameOver`)
+- No hardcoded team IDs are used for logic
 
 ---
 
-### Constraint 2: Team-Specific Buttons
-- HOME buttons affect onlt the HOME score
-- GUEST buttons affect only the GUEST score
-- Each team must have its own score variable
+## Technologies Used
 
-**Why this constraint exitst:**
-This helps practice separation of logic and prevents accidential updates to the wrong team.
+- **HTML** – Structure
+- **CSS** – Layout and styling
+- **JavaScript** – Game logic and DOM manipulation
 
 ---
 
-### Constraint 3: Maximum Score Limit
-- A maximum score limit (example: `99`) must be defined 
-- If a team reached the limit, further score increments must be ignored
-- The score must never exceed the defined limit
+## What I Learned
 
-**Why this constraint exists:**
-This teaches conditional logic and protecting application state.
-
----
-
-### Constraint 4: New Game Reset
-- A **New Game** button must reset both HOME and GIEST scores to `0`
-- Scores must not reset automatically
-- Page refresh reset is acceptable, but New Game must work properly
-
-**Why this constraint exists:**
-This teaches intentional state reset and centralized control of application logic.
-
----
-
-### Constraint 5: No Advanced Features
-- No Timers
-- No animations
-- No sound effects
-- No localStorage or database usage
-- No external libraries or frameworks
-
-**Why this constraint exists:**
-This keeps the projectfocused on core JavaScript logic without unnecessary complexity.
-
----
-
-## Tech Stack
-- HTML
-- CSS
-- JavaScript
-
----
-
-## Learning Outcomes
-By completing this project, I am to:
-- Understand how multiple counters work independently
-- Practice handling button events correctly
-- Apply constraints to contraol application behavior
-- Improve confidence in writing JavaScript loh=gic
+- Difference between `querySelector` and `querySelectorAll`
+- How `closest()` works for upward DOM traversal
+- Selecting elements based on context instead of hardcoding
+- Managing application state using a boolean flag
+- Resetting multiple DOM elements correctly
+- Using `readonly` inputs for display-only values
 
 ---
 
 ## Future Improvements (Optional)
-- Highlight the leading team
-- Disable buttons when the maximum score is reached
-- Improve UI styling
+
+- Disable buttons visually after the game ends
+- Highlight the winning team
+- Add animations for score updates
+- Make the max score configurable
 
 ---
 
 ## How to Run
 - Clone or download the repository
 - Open the `main.html` file in a web browser
+
+---
+
+This project was stopped intentionally after achieving the learning goals,
+without over-engineering or unnecessary refactoring.
+
