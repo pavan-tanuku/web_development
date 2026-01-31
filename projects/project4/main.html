@@ -26,12 +26,28 @@
         <section id="hero">
             <h2 id="generate-title">Generate a Password</h2>
             <p id="para">Never use an insecure password again.</p>
-            <div class="btn-dsp">
-                <button id="gen-btn" onclick="generatePassword()">Generate</button>
-                <input type="text" id="dsp" name="password" readonly>
+            <div class="password-wrapper">
+                <input type="password" id="dsp" name="password" readonly>
+                <!-- setting the "show" icon as showing for the initial state -->
+                <img 
+                src="./images/icons/eye-password-show-svg.svg"
+                id="eye-show"
+                alt="show password"
+                />
+                <!-- setting the "hide" icon as hiding for the initial state -->
+                <img 
+                src="./images/icons/eye-password-hide-svg.svg" 
+                id="eye-hide"
+                alt="hide password"
+                style = "display: none;">
+            </div>
+            <div class="gen-copy">
+                <button class="btn" id="gen-btn" onclick="generatePassword()">Generate</button>
+                <button class="btn" id="copy-btn" >Copy</button>
             </div>
         </section>
     </main>
+    <!-- JavaScript connection -->
     <script src="./index.js"></script>
 </body>
 

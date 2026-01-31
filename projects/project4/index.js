@@ -1,4 +1,6 @@
 const dspEl = document.getElementById("dsp");
+const showEye = document.getElementById("eye-show");
+const hideEye = document.getElementById("eye-hide");
 
 function generatePassword() {
     const upperCaseAlphabets = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -28,9 +30,7 @@ function generatePassword() {
     shufflePassword(password);
     // converting the array to string using join()
     let finalPasswordString = password.join("");
-    // return password;
-    console.log(finalPasswordString);
-    
+    // return password;    
     dspEl.value = finalPasswordString;
 }
 
@@ -44,3 +44,25 @@ function shufflePassword(password) {
     }
     return password;
 }
+
+/* password toggle Feature */
+
+// Show password
+showEye.addEventListener("click", function () {
+    // udpating the input type to "text"
+    dspEl.type = "text";
+    // hiding the show icon
+    showEye.style.display = "none";
+    // showing the hide icon
+    hideEye.style.display = "inline";
+});
+
+// Hide password
+hideEye.addEventListener("click", function () {
+    // updating the input type to "password"
+    dspEl.type = "password";
+    // showing the show icon
+    showEye.style.display = "inline";
+    // hiding the hide icon
+    hideEye.style.display= "none";
+});
