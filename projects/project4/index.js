@@ -1,6 +1,7 @@
 const dspEl = document.getElementById("dsp");
 const showEye = document.getElementById("eye-show");
 const hideEye = document.getElementById("eye-hide");
+const copyEl = document.getElementById("copy-btn");
 
 function generatePassword() {
     const upperCaseAlphabets = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -65,4 +66,19 @@ hideEye.addEventListener("click", function () {
     showEye.style.display = "inline";
     // hiding the hide icon
     hideEye.style.display= "none";
+});
+
+// copy feature
+copyEl.addEventListener("click", function () {
+    if(dspEl.value === "") {
+        return;
+    }
+    // copying using the JavaScript inbuilt API 
+    navigator.clipboard.writeText(dspEl.value);
+    const originalText = copyEl.innerText
+    copyEl.innerText = "Copied!";
+    // setting the timeout for updating the copy button
+    setTimeout(function() {
+        copyEl.innerText = originalText;
+    }, 1000);
 });
